@@ -1,0 +1,25 @@
+{
+  "name": "yes",
+  "version": "1",
+  "authors": [
+    "Carlos Moreira <moreira.carlos09@gmail.com>"
+  ],
+  "description": "Back To Top",
+  "main": "TopTopScroller.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1"
+  },
+  "keywords": [
+    "javascript",
+    "plugin",
+    "back2top"
+  ]
+}
