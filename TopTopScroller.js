@@ -20,16 +20,7 @@ var TopTopScroller = (function() {
 			//Create the Dom object
 			$('body').append("<div style='cursor:pointer; display:none; position: fixed;'  id='TopTopScroller'" + ((config.customClass !== "") ? "class='" + config.customClass + "'" : "") + " >" +
 
-				"" + config.text + "</div>").click(function() {
-				//console.log("Clicked Top");
-				$('html, body').animate({
-					scrollTop: 0
-				}, config.timeToScroll, function() {
-					//console.log("done");
-				});
-
-
-			});
+				"" + config.text + "</div>");
 
 			$('#TopTopScroller').css({
 				left: (config.rightorleft === "left") ? config.pixelsFromSide + "px" : null,
@@ -43,8 +34,19 @@ var TopTopScroller = (function() {
 			}).css("background-color", config.bgColor).
 				css("border-radius", config.borderRad+"%").
 				css("line-height", (config.height)+"px").
-				css("text-align", "center");
+				css("text-align", "center")
 
+
+			.click(function() {
+				//console.log("Clicked Top");
+				$('html, body').animate({
+					scrollTop: 0
+				}, config.timeToScroll, function() {
+					//console.log("done");
+				});
+
+
+			});
 
 			//On Window Scroll
 			$(window).scroll(function() {
